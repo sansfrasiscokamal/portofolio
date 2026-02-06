@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Syaiful Kamaludin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0d6efd;
+            --dark-color: #212529;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        .hero-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+        .profile-img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border: 8px solid white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .progress {
+            height: 10px;
+            border-radius: 5px;
+        }
+        .footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 50px 0;
+        }
+        .social-icons a {
+            font-size: 1.5rem;
+            color: #fff;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+        .social-icons a:hover {
+            color: var(--primary-color);
+            transform: translateY(-5px);
+        }
+        .card {
+            border: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+          /* Sedikit sentuhan agar card terlihat lebih profesional */
+        .hover-effect {
+            transition: transform 0.3s ease;
+        }
+        .hover-effect:hover {
+            transform: translateY(-5px);
+        }
+        .card-img-top {
+            aspect-ratio: 1/1; /* Membuat foto selalu kotak sempurna */
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">SK.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#keahlian">Keahlian</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center">
+        <div class="container">
+            <img src="img/syaiful.png" alt="Syaiful Kamaludin" class="rounded-circle profile-img mb-4">
+            <h1 class="display-4 fw-bold">Syaiful Kamaludin</h1>
+            <p class="lead text-muted">Pembelajar Mandiri | Pengusaha Muda | Digital Marketing & Programming</p>
+            <div class="social-icons mt-3">
+                <a href="https://www.instagram.com/skamal_100?igsh=czdhcGVyYjBuYXhx" class="text-dark"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@kakashopshp?_r=1&_t=ZS-93hI1eHppR2" class="text-dark"><i class="fab fa-tiktok"></i></a>
+                <a href="https://youtube.com/@shpmberfikir?si=MgtMULPsSv6pic0A" class="text-dark"><i class="fab fa-youtube"></i></a>
+                <a href="https://github.com/sansfrasiscokamal" class="text-dark"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section id="tentang" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 mb-4">
+                    <h2 class="fw-bold mb-4">Tentang Saya</h2>
+                    <p>Memiliki pengalaman wirausaha di bidang permak dan jahit baju, serta aktif dalam digital marketing (affiliate, seller) dan pengembangan diri.</p>
+                    <p>Fokus saya saat ini adalah menggabungkan keahlian bisnis konvensional dengan teknologi digital untuk menciptakan nilai tambah di masyarakat.</p>
+                    <div class="mt-4">
+                        <h5 class="fw-bold"><i class="fas fa-history me-2"></i>Singkat Perjalanan</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>2018: Lulus SMA</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>2018-2020: Pondok Pesantren Al Fatah Temboro</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>2024-Sekarang: Wirausaha & Content Creator</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-5">
+                    <div class="p-4 bg-light rounded shadow-sm border-start border-primary border-4">
+                        <h4 class="fw-bold mb-4">Wawasan Terkini</h4>
+                        
+                        <h6 class="fw-bold"><i class="fas fa-book-open me-2 text-primary"></i>Literatur:</h6>
+                        <ul class="mb-4">
+                            <li>Bisnis halal & harom | Ammi Nur Baits</li>
+                            <li>Rich Dad Poor Dad | Robert kyosaki</li>
+                            <li>This is Marketing (Seth Godin)</li>
+                            <li>Ego is the Enemy</li>
+                            <li>learn start up</li>
+                            <li><small class="text-muted text-italic">Dan masih banyak lagi</small></li>
+                        </ul>
+                        
+                        <h6 class="fw-bold"><i class="fas fa-users me-2 text-primary"></i>Inspirasi & Tokoh (Followed):</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check me-2 text-success"></i><strong>Web Programming UNPAS</strong> (Coding)</li>
+                            <li class="mb-2"><i class="fas fa-check me-2 text-success"></i><strong>W3School</strong> (Coding)</li>
+                            <li class="mb-2"><i class="fas fa-check me-2 text-success"></i><strong>Chairul Tanjung</strong> (bisnis)</li>
+                            <li class="mb-2"><i class="fas fa-check me-2 text-success"></i><strong>Denny Santoso</strong> (Marketing)</li>
+                            <li class="mb-2"><i class="fas fa-check me-2 text-success"></i><strong>RaymondChin</strong> (Marketing)</li>
+                            <li class="mb-2"><i class="fas fa-check me-2 text-success"></i><strong>james gwe</strong> (Marketing/sales)</li>
+                            <li class="mb-2"><i class="fas fa-check me-2 text-success"></i><strong>jack ma</strong> (Marketing)</li>
+                            <li class="mb-2"><i class="fas fa-check me-2 text-success"></i><strong>Rianto Astono</strong> (Bisnis/Mindset)</li>
+                            <li class="mb-2"><i class="fas fa-check me-2 text-success"></i><strong>Robert Kiyosaki</strong> (Finansial)</li>
+                            <li class="mb-2"><i class="fas fa-check me-2 text-success"></i><strong>Tung Dasem waringin</strong> (Finansial)</li>
+                            <li class="mb-2"><i class="fas fa-check me-2 text-success"></i><strong>Agusleohalim</strong> (konten kreator)</li>
+                        </ul>
+                        <small class="text-muted text-italic">*Tokoh-tokoh ini adalah salah satu referensi saya dalam belajar.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="keahlian" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-5">Keahlian & Kemampuan</h2>
+           <div class="col-12">
+              <div class="card p-4 shadow-sm">
+                  <div class="mb-3">
+                      <div class="d-flex justify-content-between">
+                          <span>Public Speaking</span>
+                          <span>80%</span>
+                      </div>
+                      <div class="progress" style="height: 10px;">
+                          <div class="progress-bar bg-primary" style="width: 80%"></div>
+                      </div>
+                  </div>
+          
+                  <div class="mb-3">
+                      <div class="d-flex justify-content-between">
+                          <span>Leadership</span>
+                          <span>80%</span>
+                      </div>
+                      <div class="progress" style="height: 10px;">
+                          <div class="progress-bar bg-primary" style="width: 80%"></div>
+                      </div>
+                  </div>
+          
+                  <div class="mb-3">
+                      <div class="d-flex justify-content-between">
+                          <span>Marketing</span>
+                          <span>80%</span>
+                      </div>
+                      <div class="progress" style="height: 10px;">
+                          <div class="progress-bar bg-primary" style="width: 80%"></div>
+                      </div>
+                  </div>
+          
+                  <div class="mb-3">
+                      <div class="d-flex justify-content-between">
+                          <span>Bahasa Inggris</span>
+                          <span>80%</span>
+                      </div>
+                      <div class="progress" style="height: 10px;">
+                          <div class="progress-bar bg-primary" style="width: 80%"></div>
+                      </div>
+                  </div>
+          
+                  <div class="mb-3">
+                      <div class="d-flex justify-content-between">
+                          <span>HTML</span>
+                          <span>80%</span>
+                      </div>
+                      <div class="progress" style="height: 10px;">
+                          <div class="progress-bar bg-info" style="width: 80%"></div>
+                      </div>
+                  </div>
+          
+                  <div class="mb-3">
+                      <div class="d-flex justify-content-between">
+                          <span>CSS</span>
+                          <span>70%</span>
+                      </div>
+                      <div class="progress" style="height: 10px;">
+                          <div class="progress-bar bg-info" style="width: 70%"></div>
+                      </div>
+                  </div>
+          
+                  <div class="mb-3">
+                      <div class="d-flex justify-content-between">
+                          <span>JavaScript</span>
+                          <span>50%</span>
+                      </div>
+                      <div class="progress" style="height: 10px;">
+                          <div class="progress-bar bg-warning" style="width: 50%"></div>
+                      </div>
+                  </div>
+          
+              </div>
+          </div>
+        </div>
+    </section>
+    <section id="produk-kami" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-5">My Produk</h2>
+        
+        <div class="row g-3 justify-content-center">
+            
+            <div class="col-6 col-md-4 col-lg-2">
+                <a href="https://mskh12.blogspot.com/" class="text-decoration-none text-dark">
+                    <div class="card h-100 border-0 shadow-sm hover-effect">
+                        <img src="img/blogger.jpg" class="card-img-top rounded-3" alt="Landing Page">
+                        <div class="card-body p-2 text-center">
+                            <h6 class="fw-bold mb-0">Blogger</h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <a href="https://www.tiktok.com/@kakashopshp?_r=1&_t=ZS-93hDUfj0ZzE" class="text-decoration-none text-dark">
+                    <div class="card h-100 border-0 shadow-sm hover-effect">
+                        <img src="img/tiktok.jpg" class="card-img-top rounded-3" alt="Konten">
+                        <div class="card-body p-2 text-center">
+                            <h6 class="fw-bold mb-0">konten kreator</h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <a href="https://sansfrasiscokamal.github.io/toko/" class="text-decoration-none text-dark">
+                    <div class="card h-100 border-0 shadow-sm hover-effect">
+                        <img src="img/toko.jpg" class="card-img-top rounded-3" alt="Web App">
+                        <div class="card-body p-2 text-center">
+                            <h6 class="fw-bold mb-0">Toko</h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <a href="#" class="text-decoration-none text-dark">
+                    <div class="card h-100 border-0 shadow-sm hover-effect">
+                        <img src="img/wirausaha.jpg" class="card-img-top rounded-3" alt="Ads Strategy">
+                        <div class="card-body p-2 text-center">
+                            <h6 class="fw-bold mb-0">wirausaha</h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-2">
+                <a href="#" class="text-decoration-none text-dark">
+                    <div class="card h-100 border-0 shadow-sm hover-effect">
+                        <img src="img/bisnis.jpg" class="card-img-top rounded-3" alt="Wirausaha">
+                        <div class="card-body p-2 text-center">
+                            <h6 class="fw-bold mb-0">Business Plan</h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            </div>
+    </div>
+</section>
+
+    <section id="kontak" class="py-5">
+        <div class="container">
+            <div style="max-width: 600px; margin: auto;">
+                <h2 class="fw-bold text-center mb-4">Hubungi Saya</h2>
+                <div class="card p-4 shadow-sm">
+                    <form id="whatsappForm">
+                        <div class="mb-3">
+                            <label class="form-label">Nama Lengkap</label>
+                            <input type="text" id="name" class="form-control" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Pesan</label>
+                            <textarea id="message" class="form-control" rows="4" placeholder="Apa yang ingin Anda bicarakan?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">
+                            <i class="fab fa-whatsapp me-2"></i>Kirim ke WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="social-icons mb-4">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="mb-0 text-muted">&copy; 2025 Syaiful Kamaludin.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    // Pastikan kode ini diletakkan di paling bawah sebelum </body>
+    document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const phone = "6285141632570"; 
+        const nameInput = document.getElementById('name');
+        const messageInput = document.getElementById('message');
+    
+        // Cek apakah elemennya ada untuk menghindari error "null"
+        if (nameInput && messageInput) {
+            const name = encodeURIComponent(nameInput.value);
+            const message = encodeURIComponent(messageInput.value);
+            
+            // Menggunakan encodeURIComponent lebih aman daripada manual %0A
+            const whatsappUrl = `https://wa.me/${phone}?text=Halo%20Syaiful,%20saya%20*${name}*.%0A%0A${message}`;
+            
+            // Langsung arahkan (lebih ramah mobile daripada window.open)
+            window.location.href = whatsappUrl;
+        } else {
+            console.error("ID name atau message tidak ditemukan di HTML!");
+        }
+      });
+    </script>
+</body>
+</html>
